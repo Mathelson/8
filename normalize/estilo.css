@@ -1,0 +1,15 @@
+
+*{
+	font-family: 'Lobster', cursive;
+}
+.contact-form{
+	font-size: 25px;
+}
+
+.contact-form__h2{
+	font-size: 1em;
+	font-family: 'Lobster', cursive;
+	line-height: 2;
+	font-weight: 150;
+	color: blue;
+}

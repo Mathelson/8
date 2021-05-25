@@ -1,0 +1,31 @@
+/*
+font-family: 'Roboto', sans-serif;
+**/
+* {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 30px;
+}
+/*
+
+**/
+div {
+	width: 120px;
+	height: 120px;
+	display: block;
+    background: orange;
+    font-family: 'Lobster', cursive;
+}
+
+.caja1 {
+ background-color: orange;
+}
+.caja2 {
+    background-color: green;
+}
+.caja3 {
+ background-color: lightblue;
+}
+.caja4 {
+    background-color: yellow;
+   }
