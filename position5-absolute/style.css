@@ -1,6 +1,14 @@
 /*
 font-family: 'Roboto', sans-serif;
 **/
+/**cuando hacemos que un elemento se posicione de manera absoluta
+no reserva su elemento que ocupa en el flujo.
+El punto de referencia a partir del cual va a ser top right left bottom
+va a ser o el viewport o el contenedor en caso de que el contenedor este posicionado
+si un contenedor esta posicionado entonces es ese contenedor sino va a ser el viewport y
+el tamanio del bloque se va a ajustar al tamanio del contenido : ver otras versiones
+y ejemplos de position: relative y absolute*/
+
 * {
 	font-family: 'Lobster', cursive;
 	font-weight: 100;
