@@ -1,0 +1,114 @@
+/*algunos inputs
+<input type="password" name="">
+<input type="color" name="">
+<input type="range" name="">
+
+	PSEUDO ELEMENTOS
+	ESTOS NO FUNCIONAN CON display: inline;
+::first-line   / BLOCK
+.texto::first-letter / BLOCK 
+
+cuando creamos pseudo elementos after, es como si crearamos un elemento hijo
+::after / HIJOS - CONTENT (NECESARIO) - INLINE
+
+::before / HIJOS - CONTENT (NECESARIO) - INLINE
+----------------------------------------
+::placeholder
+
+/**LOS ELEMENTOS QUE ESTAN DENTRO DE LA ETIQUETA CONTENT NO FORMAN PARTE DEL DOM*/
+
+
+* {
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	font-size: 20px;
+}
+
+
+
+
+
+.form-before {
+	margin: 100px auto;
+	display: block;
+	background-color: #666;
+	padding: 100px;
+	width: 50%;
+}
+
+b {
+	padding: 6px;
+	width: 100%;
+}
+
+b::before {
+content: "me suscribi";
+color: #fff;
+}
+
+
+b::after {
+	content: "todo tendencias";
+	color: red;
+	background: #614;
+}
+
+
+
+
+
+
+/**el form se comporta como un div*/
+form {
+	margin: 100px auto;
+	display: block;
+	background-color: #555;
+	padding: 100px;
+	width: 50%;
+}
+
+input {
+	padding: 6px;
+	width: 100%;
+}
+
+
+
+
+/**cambio la tipografia de lo que muestra el input**/
+input::placeholder {
+	color:  red;
+	/**font-size: 10px;*/
+	font-size: 1.4em;
+	background-color: yellow;
+}
+p {
+	padding: 6px;
+	width: 100%;
+}
+/**cambio los colores de cuando selecciono */
+p::selection {
+	color:  white;
+	/**font-size: 10px;*/
+	font-size: 1.4em;
+	background-color: violet;
+}
+
+
+
+
+
+
+.texto {
+	/**distancia de arriba respecto del viewport*/
+	padding: 20px;
+
+}
+
+/**pseudo elemento*/
+.texto::first-line {
+	color:  blueviolet;
+	font-size: 1.3em;
+}
+
+
