@@ -1,0 +1,22 @@
+ATAJOS
+
+ctrl+f
+ctrl+h
+<div></div>
+<div></div>
+<div></div>
+
+reemplazo las veces donde dice div por <p>
+
+REMPLECE ALL
+
+-----------------------------------------------------------------------
+
+ctrl + clicck //clickeo en todos los lugares y puedo escribir lo mismo en todos
+<div>/</div>
+<div>/</div>
+<div>/</div>
+
+
+----------------------------------------------------------------------
+windows + flechaDerechas
