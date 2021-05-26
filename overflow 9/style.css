@@ -1,0 +1,104 @@
+/*overflow: 
+
+El valor por defecto es:  visible;
+valor auto;//podemos escrollear dentro de la caja
+valor scroll;//pone la barra de scroll por mas que no sea necesario
+
+overflow-y:  
+
+overflow-x:  
+overflow-x: scroll;
+overflow-y: hidden;
+
+**/
+
+* {
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	font-size: 40px;
+}
+
+body {
+	background: black;
+}
+
+.texto {
+	margin: auto;/**LO CENTRA DENTRO DEL viewport*/
+	margin-top: 50px;/**CORRE DE ARRIBA HACIA ABAJO 50PX*/
+	width: 320px;/**ANCHO*/
+	height: 200px;/**altURA*/
+	border: 4px solid red;/**BORDE QUE COME PIXELES DEL ANCHO Y EL LARGO*/
+	background: grey;
+	/*para que el texto no se sobrepase, para
+	comprobar se puede borrar apartir de aca**/
+	
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.ejemploOverflow {
+
+	margin: auto;/**LO CENTRA DENTRO DEL viewport*/
+	margin-top: 50px;/**CORRE DE ARRIBA HACIA ABAJO 50PX*/
+	width: 320px;/**ANCHO*/
+	height: 200px;/**altURA*/
+	border: 4px solid red;/**BORDE QUE COME PIXELES DEL ANCHO Y EL LARGO*/
+	background: grey;
+	/**recorta lo que sobresale de la imagen*/
+	overflow: hidden;
+
+}
+
+img {
+	/**saco la imagen del .ejemploOverflow */
+	width: 1000px;
+	position: relative;
+	top: 160px;
+	left: 140;
+	outline: 2px solid blue;
+	
+}
+
+
+img:hover {
+	width: 1000px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	outline: 2px solid blue;
+
+}
+
+.ejemploOverflow-2 {
+
+
+	margin: auto;/**LO CENTRA DENTRO DEL viewport*/
+	margin-top: 50px;/**CORRE DE ARRIBA HACIA ABAJO 50PX*/
+	width: 320px;/**ANCHO*/
+	height: 200px;/**altURA*/
+	border: 4px solid red;/**BORDE QUE COME PIXELES DEL ANCHO Y EL LARGO*/
+	background: grey;
+	/**recorta lo que sobresale de la imagen*/
+	overflow: hidden;
+
+}
+
+.imagen-2 {
+	width: 1000px;
+	position: relative;
+	top: 260px;
+	left: 240px;
+	outline: 2px solid blue;
+	/**	transition: all 0.2;*/
+	transition: all 1.2s;
+
+}
+
+
+.ejemploOverflow-2:hover > .imagen-2 {
+	width: 1000px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	outline: 2px solid blue;
+}
