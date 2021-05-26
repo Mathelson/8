@@ -1,0 +1,35 @@
+/*
+	<--! LA IMAGEN DEBE IR ARRIBA!-->
+	FLOAT SOLO PARA CONTENEDORES SEPARADOS
+**/
+
+* {
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	font-size: 20px;
+}
+
+
+.cont {
+
+	/**margin: auto;/**LO CENTRA DENTRO DEL viewport*/
+	margin-top: 50px;/**CORRE DE ARRIBA HACIA ABAJO 50PX*/
+	/*border: 4px solid red;/**BORDE QUE COME PIXELES DEL ANCHO Y EL LARGO*/
+	background: grey;
+	width: 50%;
+	/**margenes con el texto (rededor)*/
+	/**padding: 20px;*/
+}
+
+
+.cont img {
+	/**el texto envuelve a la imagen*/
+	/**float: right;*/
+	float: right;
+	width: 300px;
+	/**para alejar un poco el texto de la imagen*/
+	margin-right: 18px;
+	margin-bottom: 9px;
+}
+
+
