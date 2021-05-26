@@ -1,0 +1,17 @@
+/*sticky es una mezcla entre FIXED Y RELATIVE**/
+
+* {
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	font-size: 40px;
+}
+
+
+.caja-fixed {
+	background: red;
+	position: sticky;
+	/**para ver que no haya letra abajo*/
+	opacity: 0.3;
+	top:  50px;
+
+}
