@@ -1,0 +1,98 @@
+/**se aplica a los pseudo elementos
+
+PSEUDO-CLASES: ;
+
+:hover//mouse encima
+:link
+:visited
+:active
+:focus
+:lang
+
+
+*/
+
+
+* {
+	font-family: 'Sen', sans-serif;
+	font-weight: 100;
+	font-size: 20px;
+}
+
+
+
+
+
+.caja1 {
+	height: 200px;
+	width: 200px;
+	background: slateblue;
+	/*transition nos permite retardar el cambio de la caja**/
+	transition: background 1s, height 1s, width 1s;
+}
+
+.caja1:hover {
+	background: darkslateblue;
+	height: 300px;
+	width: 300px;
+}
+
+
+.caja2 {
+	padding: 20px;
+	background-color: darkslateblue;
+	color: #fff;
+}
+
+.caja2:hover {
+	padding: 20px;
+	background: slateblue;
+	color: #000;
+}
+
+
+/**.caja3 {
+	margin: 30px;
+	display: block;
+}*/
+/**todos los elementos a que no se visiten tiene el elemento rojo*/
+/**son elementos en linea pero se le puede poner display:  block*/
+a:link {
+	color:  red;
+	background-color: blue;
+}
+/*todos los elementos ya visitados**/
+a:visited {
+	color: violet;
+	background-color: black;
+}
+
+
+
+.caja4 {
+	width: 250px;
+	height: 250px;
+	background: red;
+	margin: 25px;
+	/**no se recomienda poner all*/
+	transition: all 1s;
+}
+/**cuando apreto*/
+.caja4:active {
+	background: blue;
+	width: 600px;
+}
+
+.caja5 {
+	width: 250px;
+	height: 250px;
+	background: red;
+	margin: 25px;
+	/**no se recomienda poner all*/
+	transition: all 1s;
+}
+/**cuando apreto*/
+.caja5:active {
+	background: blue;
+	width: 600px;
+}
