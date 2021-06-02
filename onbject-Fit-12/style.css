@@ -1,0 +1,36 @@
+/* OBJECT-FIT : 
+	F11
+	contain
+	cover
+	none
+	scale-down
+IMPORTANTE PARA GALERIAS E IMAGENES
+*/
+
+* {
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	font-size: 20px;
+}
+
+
+/**SE UTILIZA PARA MODIFICAR 
+LAS RESOLUCIONES DE LAS IMAGENES*/
+
+.caja {
+	margin: 25px;
+	width: 300px;
+	/*height: 400px = contenedor**/
+	/**1height: 400px;*/
+	height: 360px;
+}
+
+.caja img {
+	height: 100%;
+	width: 100%;
+	border: 2px solid red;
+	/**1object-fit:  contain;*/ 
+	/**la imagen se recorta y cubre el contenedor*/
+	/**object-fit:scale-down;  se queda con la resolucion mas chica*/
+	object-fit: cover;
+}
