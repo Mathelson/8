@@ -2,7 +2,7 @@
 
 PSEUDO-CLASES: ;
 
-:hover//mouse encima
+:hover//mouse encima// se usa para botones de links
 :link
 :visited
 :active
@@ -30,7 +30,7 @@ PSEUDO-CLASES: ;
 	/*transition nos permite retardar el cambio de la caja**/
 	transition: background 1s, height 1s, width 1s;
 }
-
+/**cuando el mouse este encima del boton*/
 .caja1:hover {
 	background: darkslateblue;
 	height: 300px;
@@ -96,3 +96,28 @@ a:visited {
 	background: blue;
 	width: 600px;
 }
+
+
+.caja6 {
+	margin: 25px;
+	background: lightgrey;
+	transition: background 0.4s, padding 0.4s;
+}
+/**FOCUS: Se utiliza en los inputs*/
+/**se pone blanco cuando le damos click*/
+.caja6:focus {
+	background: white;
+	padding: 20px;
+	/**width: 600px;*/
+}
+
+.caja7 {
+	margin:  25px;
+}
+/**LAN:  funcion que modifica por idioma, casi no se usa*/
+.caja7 b:lang(en) {
+	background: red;
+	background: white;
+	padding: 20px;
+}
+
