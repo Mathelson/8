@@ -1,0 +1,31 @@
+/* OBJECT-Position : 
+Left - Right -Top -Button
+PX - FN - % -FTC
+IMPORTANTE PARA GALERIAS E IMAGENES
+*/
+
+* {
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	font-size: 20px;
+}
+
+
+/**SE UTILIZA PARA MODIFICAR 
+LAS RESOLUCIONES DE LAS IMAGENES*/
+
+.caja {
+	margin: 25px;
+	width: 220px;
+	height: 360px;
+}
+
+.caja img {
+	height: 100%;
+	width: 100%;
+	border: 2px solid red;
+	object-fit: cover;
+	/**muestra la imagen más a la izquierda,left lo mismo
+	 * pasa con right, bottom top*/
+	object-position: left;
+}
