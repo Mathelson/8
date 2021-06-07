@@ -1,0 +1,80 @@
+/* 
+	COLORES
+
+	color name
+	hexadecimal//con 3 y con 6 ej:  f00;
+	rgb()0-255 o es nada de ese color y 255 todo el color
+	rgba
+	hsl
+	hsla
+colores primarios:  verde rojo y azul;
+
+	https://www.mclibre.org/consultar/amaya/css/css-fondos.html#background-position
+
+*/
+
+* {
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	font-size: 20px;
+}
+
+.nav__responsive-ul {
+	display: none;
+}
+
+.nav {
+	background-color: darkslateblue;
+}
+
+/**los ponemos uno al lado del otro*/
+.nav__li {
+	display: inline-block;
+	padding: 12px;
+	color: #fff;
+}
+
+/**cuando se haga hover en este elemento*/
+.nav__li:hover > a {
+	color: #bbb;
+}
+
+.nav__li:hover {
+	color: #bbb;
+}
+
+.nav__li a {
+	color: #fff;
+	text-decoration:  none;
+}
+
+.nav__li i {
+	/**se separan los iconos*/
+	/**width: 30px;*/
+	box-sizing: border-box;
+	text-align: right;
+	margin-left: 8px;
+}
+
+@media only screen and (max-width:  500px) {
+	.nav__ul {
+		display: none;
+	}
+
+	.nav__responsive-ul {
+		display: block;
+		position: absolute;
+		width: 100%;
+	}
+
+	.nav__responsive-button {
+		float: right;
+		font-size: 25px;
+		padding: 6px 20px;
+	}
+
+	.nav {
+		height: 37px;
+		width: 100%;
+	}
+}
