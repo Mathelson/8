@@ -1,0 +1,49 @@
+/* 
+	COLORES
+
+	color name
+	hexadecimal//con 3 y con 6 ej:  f00;
+	rgb()0-255 o es nada de ese color y 255 todo el color
+	rgba
+	hsl
+	hsla
+colores primarios:  verde rojo y azul;
+
+	https://www.mclibre.org/consultar/amaya/css/css-fondos.html#background-position
+
+*/
+
+* {
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	font-size: 20px;
+}
+
+div {
+	width: 49%;
+	/**los pongo uno al lado del otro*/
+	display: inline-block;
+	padding: 20px;
+	background: #ddd;
+}
+
+h1 {
+	font-size: 24px;
+}
+
+.caja2 {
+	background: #bbb;
+}
+/**cuando la pantalla llegue a resikuciones menores a 
+ * 800px*/
+@media only screen and (max-width: 800px) {
+
+	div {
+		display: block;
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 20px !important;
+	}
+}
