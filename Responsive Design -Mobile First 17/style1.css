@@ -24,7 +24,7 @@ colores primarios:  verde rojo y azul;
 }
 
 .nav {
-	background-color: darkslateblue;
+	background-color: #48e;
 }
 
 /**los ponemos uno al lado del otro*/
@@ -56,25 +56,71 @@ colores primarios:  verde rojo y azul;
 	margin-left: 8px;
 }
 
+.nav__responsive-button-container {
+		position: absolute;
+		width: 100%;
+		font-size: 25px;
+		background-color: #69c;
+		margin-top: -64px;
+		z-index: 100
+	}
+
+.nav__responsive-button {
+		
+		padding: 6px 20px;
+		text-align: right;
+		width: 100%;
+	}
+
 @media only screen and (max-width:  500px) {
 	.nav__ul {
 		display: none;
 	}
 
+	.nav {
+		height: 37px;
+		width: 100%;
+	}
 	.nav__responsive-ul {
 		display: block;
 		position: absolute;
 		width: 100%;
-	}
-
-	.nav__responsive-button {
-		float: right;
-		font-size: 25px;
-		padding: 6px 20px;
-	}
-
-	.nav {
+		margin-top: 37px;
+		padding-top: 27px;
 		height: 37px;
+
+	}
+
+	.nav__li-container {
+		position: relative;
+		top: -1000px;
+		/**top:calc(-100% + 27);*/
+		height: calc(100vh - 64px);
+		background: #9bf;
+		transition: all 1s;
+		z-index: 1;
+	}
+
+	.nav__responsive-li {/*ok**/
 		width: 100%;
+		padding: 9px 20px;
+	}
+
+	.nav__responsive-li i {
+		box-sizing: border-box;
+		text-align: center;
+		margin-right: 5px;
+		/**resolucion*/
+		width: 30px;
+		color: #016;
+	}
+
+	.nav__responsive-li a {
+		color: #016;
+		text-decoration: none;
+	}
+
+	.nav__responsive-ul: hover > .nav__li-container {
+		top: -27;
 	}
 }
