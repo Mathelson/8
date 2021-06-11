@@ -1,0 +1,30 @@
+/* 
+	Flex: ;
+	la caja se posicionan solas una al lado de la otra.
+	en base al contenido se mantiene la altura
+
+/**si cambiamos el main axis, automaticamente cambia el cross axis*
+	para esto utilizamos la propiedad(DEL CONTENEDOR-que afect
+	a los items) FLEX DIRECTION
+*/
+
+* {
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+}
+
+.flex-container {
+	/**display: block;*/
+	display: flex;
+	flex-direction: row;
+}
+
+
+.flex-item {
+	background-color: #248;
+	color: #fff;
+	padding: 10px;
+	margin: 5px;
+	height: 120px;
+	width: 120px;
+}
