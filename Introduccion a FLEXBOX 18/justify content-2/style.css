@@ -1,0 +1,41 @@
+/* 
+	Flex: ;
+	Justify-content:  center(centra el contenido)
+	, space-arround(centra y deja espacios)
+	,space-between(matyor cantidad de espacio entre las cajas)
+	, sapce-evenly(main axis);
+*/
+
+* {
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: nowrap;
+	/**NO FUNCIONA CON =text align:  center*/
+	/**para que el espacio entre las cajas, es decir los
+	 * margenes sean iguales*/
+	justify-content: space-evenly;
+}
+
+
+.flex-item {
+	background-color: #248;
+	color: #fff;
+	margin: 5px;
+	height: 120px;
+	/**NO FUNCIONA = Xwidth: 120px;*/
+	/**PERMITE MANTENER EL ANCHO*/
+	min-width:120px;
+	text-align: center;
+}
+
+.orange {
+	background: orange;
+}
+
+.green {
+	background: green;
+}

@@ -1,0 +1,54 @@
+/* 
+	Flex: ;
+	Align-items:  flex-start, center, flex-end,stretch,baseline(cross axis);
+
+	Justify-content:  center(centra el contenido)
+	, space-arround(centra y deja espacios)
+	,space-between(matyor cantidad de espacio entre las cajas)
+	, sapce-evenly(main axis);
+*/
+
+* {
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	height: 100vh;
+	align-content: flex-start;
+	/**align-items: flex-start;*/
+	/**LU UTILIZAMOS CUANDO HAY VARIAS CAJAS*/
+	/**align-content: flex-start;*/
+	/*los pone el el medio
+	align-items: center;**/
+	/**los pone al final
+	align-items: flex-end;*/
+	/**align-items: flex-start;**/
+	/**quedan a lo largo, TENER EN CUENTA QUE ACA
+	 * JUEGA SIN EL HEIGHT*/
+	/**align-items: stretch;*/
+
+}
+
+
+.flex-item {
+	background-color: #248;
+	color: #fff;
+	margin: 5px;
+	/*SI SACO EL HEIGHT QUEDAN COMO BOTONES**/
+	/**height: 120px;*/
+	min-width:120px;
+	text-align: center;
+	height: 80px;
+}
+
+.orange {
+	background: orange;
+}
+
+.green {
+	background: green;
+}

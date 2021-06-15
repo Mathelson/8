@@ -14,16 +14,11 @@
 }
 
 .flex-container {
-	/**display: block;*/
 	display: flex;
-	/**valor por defecto
-	flex-direction: row;*/
-	/**flex-direction: column;*/
-	/**se logra un espejo es decir cambia
-	 * el sentido de las flechas de maind end hacia main start
-	 flex-direction: row-reverse;
-	 se puede aplicar al column (column-reverse)*/
-	flex-direction: column-reverse;
+	/**para que las cajas se modifiquen de lugar*/
+	/**HACIA ABAJO*/
+	/**wrap-reverse= SE VA PARA ARRIBA*/
+	flex-wrap: wrap;
 }
 
 
@@ -33,9 +28,16 @@
 	padding: 10px;
 	margin: 5px;
 	height: 120px;
-	width: 120px;
+	/**NO FUNCIONA = Xwidth: 120px;*/
+	/**PERMITE MANTENER EL ANCHO*/
+	min-width:120px;
+	text-align: center;
 }
 
 .orange {
 	background: orange;
+}
+
+.green {
+	background: green;
 }
