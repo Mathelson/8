@@ -15,10 +15,13 @@
 
 .flex-container {
 	display: flex;
-	flex-wrap: wrap;
+	/**flex-wrap: wrap;*/
+	flex-wrap: wrap-reverse;
 	justify-content: space-evenly;
 	height: 100vh;
-	align-content: flex-start;
+	align-content: baseline;
+	/**align-items: baseline;*/
+	/**align-content: flex-start;*/
 	/**align-items: flex-start;*/
 	/**LU UTILIZAMOS CUANDO HAY VARIAS CAJAS*/
 	/**align-content: flex-start;*/

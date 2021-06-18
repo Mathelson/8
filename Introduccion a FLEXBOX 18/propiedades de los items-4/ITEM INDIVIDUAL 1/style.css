@@ -1,0 +1,49 @@
+/* 
+	Flex: ;
+PROPIEDADES DE LOS ITEMS
+VAMOS A PODER MODIFICAR CADA ITEM EN PARTICULAR
+Y DARLES OTRAS PROPIEDADES Y HACER OTRAS COSAS, ANCHO
+LARGO, POSICION (MENU-ASIDE-SECCION PRINCIPAL-FOOTER)
+
+PROPIEDADES: 
+align-self
+flesx-grow: ;
+flex-shrink
+flex-basis
+flex-flex-grow
+order
+*/
+
+* {
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+}
+
+.flex-container {
+	display: flex;
+	/**justify-content: space-evenly;*/
+	height: 100vh;
+}
+
+
+.flex-item {
+	background-color: #248;
+	color: #fff;
+	margin: 5px;
+	min-width:120px;
+	text-align: center;
+	height: 80px;
+	/*margin: auto;*/
+	margin-right: auto;
+	margin-top: auto;
+	/**margin-left:  auto SE PONE DEL LADO CONTRARIO*/
+	/**margin-top: auto SE QUEDA ABAJO DE TODO;
+}
+
+.orange {
+	background: orange;
+}
+
+.green {
+	background: green;
+}
