@@ -1,0 +1,46 @@
+/* 
+	Flex: 
+	ORder:  como el z index, pero en el eje en que apunta el main axis
+	mientras, sirve para posicionar un elemento arriba del otro;
+	POSICIONA EL ELEMENTO MAS GRANDE
+
+*/ 
+
+* {
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+}
+
+.flex-container {
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+}
+
+.flex-item {
+	background-color: #248;
+	color: #fff;
+	min-width:150px;
+	text-align: center;
+	height: 100px;
+	width: 300px;
+	flex: 1;
+
+}
+
+.blue {
+	order: 2;
+}
+
+.orange {
+	background: orange;
+	/*flex-grow: 1; flex-shrik: 0 flex-basis: 300px **/
+	flex: 1 0 350px;
+	/**se posiciona al final porque el 
+	 * MAIN AXIS APUNTA HACIA => (VER IMAGEN)*/
+	order: 3;
+}
+
+.green {
+	background: green;
+}

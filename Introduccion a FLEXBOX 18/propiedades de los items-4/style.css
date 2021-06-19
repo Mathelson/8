@@ -25,14 +25,14 @@ order
 	height: 100vh;
 }
 
-
 .flex-item {
 	background-color: #248;
 	color: #fff;
 	margin: 5px;
 	min-width:120px;
 	text-align: center;
-	height: 80px;
+	height: 100px;
+	margin-top: auto;
 }
 
 .orange {

@@ -7,7 +7,8 @@ LARGO, POSICION (MENU-ASIDE-SECCION PRINCIPAL-FOOTER)
 
 PROPIEDADES: 
 align-self
-flesx-grow: ;
+flesx-grow:  el espacio que sobra se reparte entre las cajas;
+sabemos que el minimo va a ser 120px(min-width:120px;).
 flex-shrink
 flex-basis
 flex-flex-grow
@@ -21,33 +22,33 @@ order
 
 .flex-container {
 	display: flex;
-	/**justify-content: space-evenly;*/
 	height: 100vh;
+	/**permite que la caja se vaya a bajo*/
+	flex-wrap: wrap;
 }
-
 
 .flex-item {
 	background-color: #248;
 	color: #fff;
 	margin: 5px;
-	min-width:120px;
+	min-width:150px;
+	/**min-width:250px;*/
 	text-align: center;
-	height: 80px;
-	/**QUEDA LA CAJA CENTRADA*/
-	/*margin: auto;*/
-	margin-right: auto;
-	/**MARGIN:  AUTO 10PX; SE CENTRA VERTICALMENTE*/
-	/**MARGIN: AURO 0; QUEDA PEGADA ALA IZQUIERDA*/
-	/**margin-top: auto;
-	   margin-left: auto */
-	/**margin-left:  auto SE PONE DEL LADO CONTRARIO*/
-	/**margin-top: auto SE QUEDA ABAJO DE TODO;*/
+	height: 100px;
+	/**FLEX GROW*/
+	/*flex-grow: 1;*/
 }
 
 .orange {
 	background: orange;
+	/**todo lo que sobra se lo lleva esta caja 
+	 * si tenemos un width de 150 y si nos sobran 250px
+	 * esta tendria 450px de div*/
+	flex-grow: 1;
 }
 
 .green {
 	background: green;
+	/**PUEDO REPARTIR EL SOBRANTE COMO QUIERA*/
+	flex-grow: 1;
 }
