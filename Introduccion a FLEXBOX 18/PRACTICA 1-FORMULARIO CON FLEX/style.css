@@ -13,34 +13,92 @@
 
 .flex-container {
 	display: flex;
-	height: 100vh;
-	flex-direction: column;
+	/**lo  centramos verticalmente*/
+	align-items: center;
+	/**para que cuando lo hagamos responsive
+	 * se pueda deslizar*/
+	 flex-wrap: wrap;
+	 /***permite que el icono quede centrado
+	 y no se corra para abajo*/
+	 justify-content: center;
+	 background: #333;
+	 /**el primero es 50px de margin arriba y abajo y 30 a los costados**/	 
+	 margin: 50px 50px;
 }
 
-.flex-item {
-	background-color: #248;
-	color: #fff;
-	min-width:150px;
-	text-align: center;
-	height: 100px;
-	width: 300px;
+/**contenedor Form*/
+.form {
+	/**alejo el icono 400px hacia la derecha*/
+	min-width: 400px;
+	/**me pone el icono por debajo*/
 	flex: 1;
+	/**alinie el formulario al lado de la imagen del icono */
+	text-align: center;
+	padding: 30px;
+}
+.form__input {
+	width: 100%;
+	/**la parte blanca la amplio*/
+	padding: 7px;
+	/**lo que separo un input del otro*/
+	margin: 6px 0;
+	/**saco los bordes de los inputs**/
+	border: none;
+	/**puedo ponerlo en border-left y lo celeste se pinta  del lado izquierdo**/
+	border-bottom: 3px solid #1c7;
+	/**background: #000;*/
+	background: transparent;
+	/**letra*/
+	color: white;
 
 }
 
-.blue {
-	order: 2;
+.form__input:focus {
+	/**background: #333;*/
+	background: linear-gradient(to bottom, transparent, #222);
+	outline: none;
+	border-bottom: 3px solid #5f9;
+}
+.form textarea {
+	/**la parte blanca la amplio*/
+	min-height: 140px;
+	/**evito que al escribir el texto se corra el textarea y quede 
+	 * desprolijo*/
+	resize: none;
 }
 
-.orange {
-	background: orange;
-	/*flex-grow: 1; flex-shrik: 0 flex-basis: 300px **/
-	flex: 1 0 350px;
-	/**se posiciona al final porque el 
-	 * MAIN AXIS APUNTA HACIA => (VER IMAGEN)*/
-	order: 3;
+.form-img {
+	flex: 1;
+	padding: 10px;
+	display: flex;
 }
 
-.green {
-	background: green;
+.form-img div {
+	padding: 10px;
+	
+}
+
+.img-container {
+	
+	margin: auto;
+	
+	 /**se achica y luego va hacia abajo*/
+	 /**margin: auto;*/
+ 	
+}
+
+.img-container div {
+	background-color: #fff;
+	border-radius: 50%;
+	/*permite centrar el div dentro del ovalo**/
+	text-align: center;
+	padding: 40px;
+}
+/**tabajo en imagen, circulo, fondo blanco*/
+.form-img img {
+	/**tamanio de imagen */
+ 	width: 90%;
+ 	/**puede no estar*/
+	margin: auto;
+
 }
