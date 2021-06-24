@@ -11,6 +11,10 @@
 	font-weight: 100;
 }
 
+body {
+	background-color: #000;
+}
+
 .flex-container {
 	display: flex;
 	/**lo  centramos verticalmente*/
@@ -21,9 +25,13 @@
 	 /***permite que el icono quede centrado
 	 y no se corra para abajo*/
 	 justify-content: center;
-	 background: #333;
+	 background: #222;
 	 /**el primero es 50px de margin arriba y abajo y 30 a los costados**/	 
 	 margin: 50px 50px;
+	 padding: 20px;
+	 /**MARCO DE AFUERA*/
+	 border: 14px solid #000;
+	 outline: 4px solid #094;
 }
 
 /**contenedor Form*/
@@ -35,6 +43,9 @@
 	/**alinie el formulario al lado de la imagen del icono */
 	text-align: center;
 	padding: 30px;
+	/**CAMBIO EL ORDEN DEL ICONO**/
+	order:5;
+
 }
 .form__input {
 	width: 100%;
@@ -45,17 +56,17 @@
 	/**saco los bordes de los inputs**/
 	border: none;
 	/**puedo ponerlo en border-left y lo celeste se pinta  del lado izquierdo**/
-	border-bottom: 3px solid #1c7;
+	border-bottom: 3px solid #094;
 	/**background: #000;*/
 	background: transparent;
 	/**letra*/
-	color: white;
+	color: #fff;
 
 }
 
 .form__input:focus {
 	/**background: #333;*/
-	background: linear-gradient(to bottom, transparent, #222);
+	background: linear-gradient(to bottom, transparent, #111);
 	outline: none;
 	border-bottom: 3px solid #5f9;
 }
@@ -69,8 +80,13 @@
 
 .form-img {
 	flex: 1;
-	padding: 10px;
 	display: flex;
+	padding: 10px;
+	/**PARA QUE NO SE ACHIQUE LA IMAGEN DEL ICONO**/
+	/**CUANDO LLEGA A 300PX SE VA PARA ABAJO*/
+	min-width: 300PX;
+	max-width: 400px;
+	order:2;
 }
 
 .form-img div {
@@ -88,7 +104,8 @@
 }
 
 .img-container div {
-	background-color: #fff;
+	/**FONDO DEL ICONO VERDE!!*/
+	background-color: #094;
 	border-radius: 50%;
 	/*permite centrar el div dentro del ovalo**/
 	text-align: center;
@@ -101,4 +118,28 @@
  	/**puede no estar*/
 	margin: auto;
 
+}
+
+/**SELECCIONAMOS POR ATRIBUTO*/
+.form input[type="submit"] {
+	background-color: #094;
+	background-bottom:none;
+	padding:12px;
+	/***AGREGO*/
+	width:100%;
+	color:#fff;
+}
+
+.form input[type="submit"]:hover {
+	background-color: #072;
+	background-bottom:none;
+	padding:12px;
+}
+
+.form input[type="submit"]:focus {
+	background: #094;
+}
+
+.form input[type="submit"]: active {
+	background: linear-gradient(to bottom, #072, #050);
 }
