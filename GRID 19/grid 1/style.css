@@ -1,0 +1,40 @@
+/* 
+GRID: ES UNA VALOR DE LA PROPIEDAD DE DISPLAY (FELX, BLOCK ETC);
+	SE TRABAJA EN CAJAS TIPO GRILLAS
+	CONCEPTOS BASICOS
+	-GRID CONTAINER
+	-GRID ITEM
+	-GRID CELL
+	-GRID TRACKS (COLUMN AND ROW)
+	-GRID AREA
+	-GRID LINE (COLUMN LINE AND ROW LINE)
+
+	*********PROPIEDADES**************
+
+	gird-template-rows (Grid-container)**para darle las filas*
+	gird-template-columns (Grid-container)
+
+	unidades "auto" y fr(el espacio que sobra se lo damos)
+*/ 
+
+* {
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+}
+
+body {
+	background:  radial-gradient(circle, #fff,#bbb);
+	padding: 15px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 150px 150px 1fr;
+	grid-template-rows: 150px 150px 150px;
+	border: 3px solid #000;
+	
+}
+
+.grid-item {
+	border: 1px solid #000;
+}
